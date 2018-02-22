@@ -1,0 +1,5 @@
+.env/
+*.sw*
+objectpath.egg-info
+__pycache__
+
