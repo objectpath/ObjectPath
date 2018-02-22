@@ -230,6 +230,11 @@ class Tree(Debugger):
                 typesnd=type(snd)
                 if D: self.debug("type fst: '%s', type snd: '%s'",typefst,typesnd)
                 if typefst in STR_TYPES:
+                    if isinstance(snd, str):
+                        snd = snd.strip('"')
+                        snd = snd.strip("'")
+                        fst = fst.strip('"')
+                        fst = fst.strip("'")
                     if D: self.info("doing string comparison '\"%s\" is \"%s\"'",fst,snd)
                     ret=fst==str(snd)
                 elif typefst is float:

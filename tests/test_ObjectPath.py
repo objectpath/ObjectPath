@@ -27,7 +27,18 @@ object1={
                 "_id":4
             }
         ]
-    }
+    },
+    "order": [
+        {
+            "text": 1
+        },
+        {
+            "text": "hello world"
+        },
+        {
+            "text": "hello \n world"
+        }
+    ]
 }
 
 object2={
@@ -424,6 +435,9 @@ class ObjectPath_Paths(unittest.TestCase):
         self.assertEqual(execute("$..*[@._id>1 and @._id<3][0]"), {'_id': 2})
         # very bad syntax!!!
         self.assertEqual(sorted(execute2("$.store.book[@.price]")), sorted([8.95,12.99,8.99,22.99]))
+        self.assertEqual(execute("$.order[@.text is 1]"), [{"text": 1}])
+        self.assertEqual(execute('$.order[@.text is """hello world"""]'), [{"text": """hello world"""}])
+        self.assertEqual(execute('$.order[@.text is """hello \n world"""]'), [{"text": """hello \n world"""}])
 
 #testcase2=unittest.FunctionTestCase(test_efficiency(2))
 testcase1=unittest.TestLoader().loadTestsFromTestCase(ObjectPath)
