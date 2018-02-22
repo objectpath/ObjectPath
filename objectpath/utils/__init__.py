@@ -10,8 +10,22 @@ from objectpath.core import NUM_TYPES, generator, chain, ITER_TYPES
 
 escape=escape
 unescape=unescape
-unescapeDict={"&apos;":"'","&quot;":"\""}
-escapeDict={"'":"&apos;","\"":"&quot;"}
+unescapeDict={"&apos;": "'",
+              "&quot;": "\"",
+              "&lpar;": "(",
+              "&rpar;": ")",
+              "&gt;":   ">",
+              "&lt;":   "<",
+              "&lsqb;":  "[",
+              "&rsqb;":  "]"}
+escapeDict={"'":    "&apos;",
+            "\"":   "&quot;",
+            "(":    "&lpar;",
+            ")":    "&rpar;",
+            ">":    "&gt;",
+            "<":    "&lt;",
+            "[":    "&lsqb;",
+            "]":    "&rsqb;"}
 
 # islice=islice is an optimization
 def skip(iterable, n, islice=islice):
