@@ -11,13 +11,13 @@ long_description = (
     '********\n'
     )
 
-setup(name='objectpath',
+setup(name='objectpath-ng',
             version=read('VER').strip(),
             description='The agile query language for semi-structured data. #JSON',
             long_description=long_description,
-            url='http://adriank.github.io/ObjectPath',
-            author='Adrian Kalbarczyk',
-            author_email='adrian.kalbarczyk@gmail.com',
+            url='http://objectpath.github.io/ObjectPath',
+            author='Chris Lapa',
+            author_email='36723261+chris-lapa@users.noreply.github.com',
             license='MIT',
             packages=['objectpath','objectpath.utils','objectpath.core'],
             # package_dir={'': 'objectpath'},
@@ -26,7 +26,7 @@ setup(name='objectpath',
                 "Development Status :: 6 - Mature",
                 "Intended Audience :: Developers",
                 "Intended Audience :: Science/Research",
-                "License :: OSI Approved :: MIT",
+                "License :: OSI Approved :: MIT License",
                 "Programming Language :: Python",
                 "Topic :: Software Development :: Libraries :: Python Modules"
             ],

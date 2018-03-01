@@ -3,9 +3,9 @@ ObjectPath
 
 [![Downloads](https://pypip.in/download/objectpath/badge.svg)](https://pypi.python.org/pypi/objectpath/)
 [![License](https://pypip.in/license/objectpath/badge.svg)](https://pypi.python.org/pypi/objectpath/)
-[![Build Status](https://travis-ci.org/adriank/ObjectPath.svg?branch=master)](https://travis-ci.org/adriank/ObjectPath)
-[![Code Health](https://landscape.io/github/adriank/ObjectPath/master/landscape.png)](https://landscape.io/github/adriank/ObjectPath/master)
-[![Coverage Status](https://coveralls.io/repos/adriank/ObjectPath/badge.png?branch=master)](https://coveralls.io/r/adriank/ObjectPath?branch=master)
+[![Build Status](https://travis-ci.org/objectpath/ObjectPath.svg?branch=master)](https://travis-ci.org/objectpath/ObjectPath)
+[![Code Health](https://landscape.io/github/objectpath/ObjectPath/master/landscape.png)](https://landscape.io/github/objectpath/ObjectPath/master)
+[![Coverage Status](https://coveralls.io/repos/objectpath/ObjectPath/badge.png?branch=master)](https://coveralls.io/r/objectpath/ObjectPath?branch=master)
 
 The agile NoSQL query language for semi-structured data
 -----------------------------------------------
@@ -16,7 +16,7 @@ ObjectPath is a query language similar to XPath or JSONPath, but much more power
 
 More at [ObjectPath site](http://objectpath.org/)
 
-![ObjectPath img](http://adriank.github.io/ObjectPath/img/op-colors.png)
+![ObjectPath img](http://objectpath.github.io/ObjectPath/img/op-colors.png)
 
 ObjectPath makes it easy to find data in big nested JSON documents. It borrows the best parts from E4X, JSONPath, XPath and SQL. ObjectPath is to JSON documents what XPath is to XML. Other examples to ilustrate this kind of relationship are:
 
@@ -36,12 +36,12 @@ Command line usage
 -----
 
 `````sh
-$ sudo pip install objectpath
+$ sudo pip install objectpath-ng
 $ objectpath file.json
 `````
 or
 `````sh
-$ git clone https://github.com/adriank/ObjectPath.git
+$ git clone https://github.com/objectpath/ObjectPath.git
 $ cd ObjectPath
 $ python shell.py file.json
 `````
@@ -50,7 +50,7 @@ Python usage
 ----------------
 
 `````sh
-$ sudo pip install objectpath
+$ sudo pip install objectpath-ng
 $ python
 >>> from objectpath import *
 >>> tree=Tree({"a":1})
@@ -60,7 +60,7 @@ $ python
 `````
 
 `````sh
-$ git clone https://github.com/adriank/ObjectPath.git
+$ git clone https://github.com/objectpath/ObjectPath.git
 $ cd ObjectPath
 $ python
 >>> from objectpath import *

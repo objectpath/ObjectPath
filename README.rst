@@ -3,10 +3,10 @@ ObjectPath
 
 `|Downloads| <https://pypi.python.org/pypi/objectpath/>`_
 `|License| <https://pypi.python.org/pypi/objectpath/>`_ `|Build
-Status| <https://travis-ci.org/adriank/ObjectPath>`_ `|Code
-Health| <https://landscape.io/github/adriank/ObjectPath/master>`_
+Status| <https://travis-ci.org/objectpath/ObjectPath>`_ `|Code
+Health| <https://landscape.io/github/objectpath/ObjectPath/master>`_
 `|Coverage
-Status| <https://coveralls.io/r/adriank/ObjectPath?branch=master>`_
+Status| <https://coveralls.io/r/objectpath/ObjectPath?branch=master>`_
 
 The agile NoSQL query language for semi-structured data
 -------------------------------------------------------
@@ -25,7 +25,7 @@ secure and relatively fast.
 
 More at `ObjectPath site <http://objectpath.org/>`_
 
-.. figure:: http://adriank.github.io/ObjectPath/img/op-colors.png
+.. figure:: http://objectpath.github.io/ObjectPath/img/op-colors.png
    :align: center
    :alt: ObjectPath img
 
@@ -64,15 +64,15 @@ implementation has the very same API as the Python version.
 Command line usage
 ------------------
 
-``sh $ sudo pip install objectpath $ objectpath file.json`` or
-``sh $ git clone https://github.com/adriank/ObjectPath.git $ cd ObjectPath $ python shell.py file.json``
+``sh $ sudo pip install objectpath-ng $ objectpath file.json`` or
+``sh $ git clone https://github.com/objectpath/ObjectPath.git $ cd ObjectPath $ python shell.py file.json``
 
 Python usage
 ------------
 
 ::
 
-    $ sudo pip install objectpath
+    $ pip install objectpath-ng
     $ python
     >>> from objectpath import *
     >>> tree=Tree({"a":1})
@@ -82,7 +82,7 @@ Python usage
 
 ::
 
-    $ git clone https://github.com/adriank/ObjectPath.git
+    $ git clone https://github.com/objectpath/ObjectPath.git
     $ cd ObjectPath
     $ python
     >>> from objectpath import *
@@ -94,22 +94,10 @@ Python usage
 License
 -------
 
-**AGPLv3**
-
-Using ObjectPath language in your project does not mean that your
-project is a derivative work, provided that you don't - extend the
-language functionality, - make optimizations, - sub-class any of it's
-modules.
-
-AGPL v3 license has been chosen to ensure language consistency and
-provide a way to finance its development.
-
-**If AGPL v3 is too restrictive for you, please consider buying a
-commercial licenses provided by Asyncode. This is the preferred way of
-supporting this project financially.**
+**MIT**
 
 .. |Downloads| image:: https://pypip.in/download/objectpath/badge.svg
 .. |License| image:: https://pypip.in/license/objectpath/badge.svg
-.. |Build Status| image:: https://travis-ci.org/adriank/ObjectPath.svg?branch=master
-.. |Code Health| image:: https://landscape.io/github/adriank/ObjectPath/master/landscape.png
-.. |Coverage Status| image:: https://coveralls.io/repos/adriank/ObjectPath/badge.png?branch=master
+.. |Build Status| image:: https://travis-ci.org/objectpath/ObjectPath.svg?branch=master
+.. |Code Health| image:: https://landscape.io/github/objectpath/ObjectPath/master/landscape.png
+.. |Coverage Status| image:: https://coveralls.io/repos/objectpath/ObjectPath/badge.png?branch=master

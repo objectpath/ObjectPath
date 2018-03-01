@@ -11,13 +11,13 @@ script:
 - coverage run --source=objectpath setup.py test
 deploy:
   provider: pypi
-  user: adriankal
+  user: chris.lapa
   password:
-    secure: bWTP43XxjAIwC6PMmfjt4/dCBenky+zF7empMgzfmkUq5jCoQjCJm4IUdYIdjCKLYEIU1DaOTp7+rqmIZf2d8wWvGAc4+k3vinV9k8WzycpBM+YgnW2knQ5eko93H0lpNOIrat4J0wvc51JjHfj4uqib6SCTaXmBS/kRHmiRkx8=
+    secure: DX/7qZYhHFqA2uiMjNjQtBlDaSwSW25zw4IL2kJKkAf6i5U8jtXI+MG69wCJThvIPH9Ts5Z4z74XLFuW4vEbIbk0FSEmXB4VmijbaQetsrDAHoR2pHDNlC0JrwhFHj5ZCP8Gh0f1m7wKmUMrIR0KCopeAAjuBxLqy/moWSD10osiz5jTsMhH5u8k/JfF7nqBMpBnbYXizx+tzxMgBtJM4NUJ6FkJdaAD2ajTBAi4LuwmoiUWl7Z6512RPJ4pYSlP4Ifi7pzPPloshangaw5VhPVL3binN09MwRQaJcGeB0YjG1Z/0m3V2GvsECyINw7Igsg0NnhqiNb/Uf4HdFnaBH8Wjeh0UaTwcHKHaA4tAXWBfNgYKFZ1XvRtwzhapTCamf8gSo3NU8p46qJ49P5lHrhwXucwrExQS35AudqeLu+sYEdgzeoXMfcaQGPT47R8aWDCKPqgtfW/fiRxjTVNeCyoB7OZjylM2+/FQzwNLkGLfdEmC5vQGE8AIatwaktBv7xx4YPZFD3nkjickDx+jYzW4WO8a2v+xFNju3IRr/FkeQKReJf96WDfSXAJB2hGg2ouDx+yUdeeLtjaNgcdi97+FdeOLxAGfGJAeBfZ+u6fnsweA+uT382zSf3M8gifVfPDVTKcw0BnbdAxfQa0NRfzIPKox9FL0FKJLLNK3pw=
   on:
     tags: true
     all_branches: true
-    repo: adriank/ObjectPath
-  distributions: "sdist bdist_wheel"
+    repo: objectpath/ObjectPath
+  distributions: sdist bdist_wheel
 after_success:
 - coveralls
