@@ -1,0 +1,5 @@
+.env
+*.egg*
+*.pyc
+*.tar.gz
+*.sw*
