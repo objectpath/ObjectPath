@@ -1,119 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<title>ObjectPath Reference</title>
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <title>ObjectPath Reference</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="ObjectPath Reference" />
-		<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.1/css/bootstrap.min.css" rel="stylesheet">
-		<link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-		<link href="css/ac.css" rel="stylesheet">
-		<link href="css/app.css" rel="stylesheet">
-		<link href="css/shjs/sh_style.css" rel="stylesheet">
-	</head>
-	<body>
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/ac.css" rel="stylesheet">
+    <link href="css/app.css" rel="stylesheet">
+    <link href="css/shjs/sh_style.css" rel="stylesheet">
+  </head>
+  <body>
 
-		<div class="pull-left mh16 menu affix">
-			<span class="M">M<!--<small>enu</small>--></span>
-			<a href="/" class="inline-block m16">
-				<i class="fa fa-home fa-2x"></i><span class="sr-only">Home</span>
-			</a><br/>
-			<a href="/tutorial.html" class="inline-block m16">
-				<i class="fa fa-certificate fa-2x"></i><span class="sr-only">Tutorial</span>
-			</a><br/>
-			<a href="/reference.html" class="inline-block m16">
-				<i class="fa fa-book fa-2x"></i><span class="sr-only">Documentation</span>
-			</a><br/>
-			<a href="//github.com/objectpath/ObjectPath#python-pip-usage" target="_blank" class="inline-block m16">
-				<i class="fa fa-download fa-2x"></i><span class="sr-only">Install</span>
-			</a>
-		</div>
+    <div class="pull-left mh16 menu affix">
+      <span class="M">M<!--<small>enu</small>--></span>
+      <a href="/" class="inline-block m16">
+        <i class="fa fa-home fa-2x"></i><span class="sr-only">Home</span>
+      </a><br/>
+      <a href="/tutorial.html" class="inline-block m16">
+        <i class="fa fa-certificate fa-2x"></i><span class="sr-only">Tutorial</span>
+      </a><br/>
+      <a href="/reference.html" class="inline-block m16">
+        <i class="fa fa-book fa-2x"></i><span class="sr-only">Documentation</span>
+      </a><br/>
+      <a href="//github.com/objectpath/ObjectPath#python-pip-usage" target="_blank" class="inline-block m16">
+        <i class="fa fa-download fa-2x"></i><span class="sr-only">Install</span>
+      </a>
+    </div>
 
-		<div class="pull-right mh16 social">
-			<a href="//twitter.com/ObjectPath" target="_blank" class="inline-block m16">
-				<i class="fa fa-twitter fa-3x"></i>
-			</a>
-			<a href="//github.com/objectpath/ObjectPath" target="_blank" class="inline-block m16">
-				<i class="fa fa-github fa-3x"></i>
-			</a>
-		</div>
+    <div class="pull-right mh16 social">
+      <a href="//twitter.com/ObjectPath" target="_blank" class="inline-block m16">
+        <i class="fa fa-twitter fa-3x"></i>
+      </a>
+      <a href="//github.com/objectpath/ObjectPath" target="_blank" class="inline-block m16">
+        <i class="fa fa-github fa-3x"></i>
+      </a>
+    </div>
 
-		<div class="container">
-			<div class="logo"><a href="/ObjectPath">ObjectPath</a> <small>>> reference</small></div>
-		</div>
+    <div class="container">
+      <div class="logo"><a href="/ObjectPath">ObjectPath</a> <small>>> reference</small></div>
+    </div>
 
-		<div class="container reference">
-			<div id="content" class="col-md-9" role="main">
-				<h1>Reference Manual</h1>
-				<p class="lead">Use this page as a cheatsheet. If you are a new user we recommend you start with the <a href="/ObjectPath/tutorial.html">tutorial</a> (coming soon).</p>
+    <div class="container reference">
+      <div id="content" class="col-md-9" role="main">
+        <h1>Reference Manual</h1>
+        <p class="lead">Use this page as a cheatsheet. If you are a new user we recommend you start with the <a href="/ObjectPath/tutorial.html">tutorial</a> (coming soon).</p>
 
-				<h2 id="Implementation">Implementation info</h2>
-				<p></p>
-				<div class="alert alert-info" role="alert"><i class="fa fa-info-circle fa-3x pull-left"></i><strong>Heads Up!</strong> ObjectPath currently has two implementations, in Python and Javascript. The Python version is the reference implementation. Features supported by Javascript are indicated by <i class="JS"></i>. Python-specific features are indicated by <i class="Py"></i></div>
-				<div class="alert alert-warning" role="alert">
-					<i class="fa fa-warning fa-3x pull-left"></i><strong>Warning!</strong> <i class="JS"></i> Javascript doesn't support big integers at all. Keep it in mind and convert them to strings. Or just use the Python version instead.
-				</div>
+        <h2 id="Implementation">Implementation info</h2>
+        <p></p>
+        <div class="alert alert-info" role="alert"><i class="fa fa-info-circle fa-3x pull-left"></i><strong>Heads Up!</strong> ObjectPath currently has two implementations, in Python and Javascript. The Python version is the reference implementation. Features supported by Javascript are indicated by <i class="JS"></i>. Python-specific features are indicated by <i class="Py"></i></div>
+        <div class="alert alert-warning" role="alert">
+          <i class="fa fa-warning fa-3x pull-left"></i><strong>Warning!</strong> <i class="JS"></i> Javascript doesn't support big integers at all. Keep it in mind and convert them to strings. Or just use the Python version instead.
+        </div>
 
-				<h3 id="SimpleTypes">Simple types</h3>
-				<p>ObjectPath inherits all JSON data types and supports a few more.</p>
-				<ul>
-					<li><em>number</em> such as <code>100</code> or <code>2.333</code></li>
-					<li><em>string</em> such as <code>"string"</code> or <code>'string'</code></li>
-					<li><em>null</em> such as <code>null</code></li>
-					<li><em>true</em> such as <code>true</code> or <code>t</code></li>
-					<li><em>false</em> such as <code>false</code> or <code>f</code></li>
-				</ul>
-				<p>ObjectPath type rules:</p>
-				<ul>
-					<li><i class="Py"></i><em>number</em> is split into <em>integer</em> and <em>float</em>:
-						<ul>
-							<li><em>integer</em> is a fast and small integer number</li>
-							<li><em>float</em> is a slow and very accurate real number</li>
-						</ul>
-						Python implementation of ObjectPath tries to determine which one to use. Sometimes <em>number</em> is converted into Python's <em>long</em> type. Javascript has one uniform <em>number</em> type (with <a href="//www.ecma-international.org/ecma-262/5.1/#sec-15.7.3.2" target="_blank">limit on <em>number</em> size</a>).
-					</li>
-					<li>Strings are encoded in UTF-8,</li>
-					<li><i class="Py"></i>Added the <code>datetime</code>, <code>date</code> and <code>time</code> types to handle dates and times,</li>
-					<li>Boolean types and null are case insensitive and can be written in several ways:</li>
-					<ul>
-						<li><code>true</code> can be written as: <code>t</code>, <code>true</code> (or <code>trUe</code>),</li>
-						<li><code>false</code> as: <code>f</code> or <code>false</code>,</li>
-						<li><code>null</code> as: <code>n</code>, <code>none</code>, <code>null</code>, <code>nil</code>.</li>
-					</ul>
-					<li>Negative are: <code>false</code>, <code>null</code>, <code>0</code>, <code>""</code>, <code>[]</code>, <code>{}</code>. Any other value is positive.</li>
-				</ul>
+        <h3 id="SimpleTypes">Simple types</h3>
+        <p>ObjectPath inherits all JSON data types and supports a few more.</p>
+        <ul>
+          <li><em>number</em> such as <code>100</code> or <code>2.333</code></li>
+          <li><em>string</em> such as <code>"string"</code> or <code>'string'</code></li>
+          <li><em>null</em> such as <code>null</code></li>
+          <li><em>true</em> such as <code>true</code> or <code>t</code></li>
+          <li><em>false</em> such as <code>false</code> or <code>f</code></li>
+        </ul>
+        <p>ObjectPath type rules:</p>
+        <ul>
+          <li><i class="Py"></i><em>number</em> is split into <em>integer</em> and <em>float</em>:
+            <ul>
+              <li><em>integer</em> is a fast and small integer number</li>
+              <li><em>float</em> is a slow and very accurate real number</li>
+            </ul>
+            Python implementation of ObjectPath tries to determine which one to use. Sometimes <em>number</em> is converted into Python's <em>long</em> type. Javascript has one uniform <em>number</em> type (with <a href="//www.ecma-international.org/ecma-262/5.1/#sec-15.7.3.2" target="_blank">limit on <em>number</em> size</a>).
+          </li>
+          <li>Strings are encoded in UTF-8,</li>
+          <li><i class="Py"></i>Added the <code>datetime</code>, <code>date</code> and <code>time</code> types to handle dates and times,</li>
+          <li>Boolean types and null are case insensitive and can be written in several ways:</li>
+          <ul>
+            <li><code>true</code> can be written as: <code>t</code>, <code>true</code> (or <code>trUe</code>),</li>
+            <li><code>false</code> as: <code>f</code> or <code>false</code>,</li>
+            <li><code>null</code> as: <code>n</code>, <code>none</code>, <code>null</code>, <code>nil</code>.</li>
+          </ul>
+          <li>Negative are: <code>false</code>, <code>null</code>, <code>0</code>, <code>""</code>, <code>[]</code>, <code>{}</code>. Any other value is positive.</li>
+        </ul>
 
-				<h3 id="ComplexTypes">Complex types</h3>
-				<p>Arrays can be defined in the language by issuing:</p>
-				<pre class="sh_python">[ val1, val2, ..., valN]</pre>
-				<p>and for objects it is:</p>
-				<pre class="sh_python">{ "atr1":val1, "atr2":val2, ..., "atrN":valN }<br />{ atr1:val1, atr2:val2, ..., atrN:valN }</pre>
-				<div class="alert alert-info" role="alert"><i class="fa fa-info-circle fa-3x pull-left"></i>
-					<ul>
-						<li>Attribute names can be dynamically created.  Example: <code>{$.myCar.model: "avg temperature is "<br/> + avg($.cars[@.model is $.myCar.model].temp)} -> {"Toyota Prius": "avg temperature is 4.5"}</code></li>
-						<li>When an expression returns a value other than string, it is casted to string. Example: <code>{2+2:"4"} -> {"4":"4"}</code></li>
-						<li>Names can be written without quotes, but in that case they cannot start with an operator. ObjectPath raises an exception if name is not valid.</li>
-					</ul>
-				</div>
+        <h3 id="ComplexTypes">Complex types</h3>
+        <p>Arrays can be defined in the language by issuing:</p>
+        <pre class="sh_python">[ val1, val2, ..., valN]</pre>
+        <p>and for objects it is:</p>
+        <pre class="sh_python">{ "atr1":val1, "atr2":val2, ..., "atrN":valN }<br />{ atr1:val1, atr2:val2, ..., atrN:valN }</pre>
+        <div class="alert alert-info" role="alert"><i class="fa fa-info-circle fa-3x pull-left"></i>
+          <ul>
+            <li>Attribute names can be dynamically created.  Example: <code>{$.myCar.model: "avg temperature is "<br/> + avg($.cars[@.model is $.myCar.model].temp)} -> {"Toyota Prius": "avg temperature is 4.5"}</code></li>
+            <li>When an expression returns a value other than string, it is casted to string. Example: <code>{2+2:"4"} -> {"4":"4"}</code></li>
+            <li>Names can be written without quotes, but in that case they cannot start with an operator. ObjectPath raises an exception if name is not valid.</li>
+          </ul>
+        </div>
 
-				<h3 id="DatesTimes">Dates and times</h3>
-				<p>Dates are handled as <code>datetime</code> objects. There are also <code>date</code> and <code>time</code> objects which provide support for date and time manipulation. <code>Datetime</code>, <code>date</code> and <code>time</code> objects support <code>year</code>, <code>month</code>, <code>day</code>, <code>hour</code>, <code>minute</code>, <code>second</code> and <code>microsecond</code> attributes eg. <code>now().year</code> -> <code>2011</code>.</p>
-				<div class="alert alert-warning" role="alert"><i class="fa fa-warning fa-3x pull-left"></i>Operations on dates should be performed on UTC dates and then converted to local time in order to avoid locale and DST (daylight saving time) nuances.</div>
+        <h3 id="DatesTimes">Dates and times</h3>
+        <p>Dates are handled as <code>datetime</code> objects. There are also <code>date</code> and <code>time</code> objects which provide support for date and time manipulation. <code>Datetime</code>, <code>date</code> and <code>time</code> objects support <code>year</code>, <code>month</code>, <code>day</code>, <code>hour</code>, <code>minute</code>, <code>second</code> and <code>microsecond</code> attributes eg. <code>now().year</code> -> <code>2011</code>.</p>
+        <div class="alert alert-warning" role="alert"><i class="fa fa-warning fa-3x pull-left"></i>Operations on dates should be performed on UTC dates and then converted to local time in order to avoid locale and DST (daylight saving time) nuances.</div>
 
-				<h2 id="Operations">Operators</h2>
-				<h3 id="HowOPWorks">How operators work</h3>
-				<p>Operators take computation results from their left and right side and perform an operation on these results. While behaviour of simple operators is straightforward, operators such as <code>.</code>, <code>..</code> and <code>[]</code> are more advanced.</p>
-				<p>Each of them works on arrays of objects on the left and apply to each element from this array the instruction found on the right. To better understand what it means, consider a document:</p>
-				<pre class="sh_python">{
+        <h2 id="Operations">Operators</h2>
+        <h3 id="HowOPWorks">How operators work</h3>
+        <p>Operators take computation results from their left and right side and perform an operation on these results. While behaviour of simple operators is straightforward, operators such as <code>.</code>, <code>..</code> and <code>[]</code> are more advanced.</p>
+        <p>Each of them works on arrays of objects on the left and apply to each element from this array the instruction found on the right. To better understand what it means, consider a document:</p>
+        <pre class="sh_python">{
   "a":1,
   "b":{
     "c":[1,2,3]
   }
 }</pre>
-				<p>and path:</p>
-				<pre class="sh_python">$.b.c[@ > 2]</pre>
-				<p>It works internally like this:</p>
-				<pre class="sh_python">>>> $
+        <p>and path:</p>
+        <pre class="sh_python">$.b.c[@ > 2]</pre>
+        <p>It works internally like this:</p>
+        <pre class="sh_python">>>> $
 {
   "a":1,
   "b":{
@@ -134,184 +134,184 @@
 #   3   | > 2 -> true    |   3
 # ]     |                | ]
 [3]</pre>
-				<p>The result is always an array! because ObjectPath executes <code>></code> for each element in the array and filters out elements that do not match the condition.</p>
+        <p>The result is always an array! because ObjectPath executes <code>></code> for each element in the array and filters out elements that do not match the condition.</p>
 
-				<h3 class="OperatorPrecedence">Operator precedence</h3>
-				<p>Operations are executed in the following order:</p>
-				<p>
-					(<code>.</code> = <code>[</code> = <code>(</code>) ->
-					(<code>+ (prefix)</code> = <code>- (prefix)</code>) ->
-					(<code>*</code> = <code>/</code>) ->
-					(<code>+ (infix)</code> = <code>- (infix)</code>) ->
-					(<code>in</code> = <code>not</code> = <code>is</code> = <code><</code> = <code>></code> = <code><=</code> = <code>>=</code>) ->
-					<code>not</code> ->
-					<code>and</code> ->
-					<code>or</code>
-				</p>
-				<p>Other operators and tokens are precedence-neutral.</p>
+        <h3 class="OperatorPrecedence">Operator precedence</h3>
+        <p>Operations are executed in the following order:</p>
+        <p>
+          (<code>.</code> = <code>[</code> = <code>(</code>) ->
+          (<code>+ (prefix)</code> = <code>- (prefix)</code>) ->
+          (<code>*</code> = <code>/</code>) ->
+          (<code>+ (infix)</code> = <code>- (infix)</code>) ->
+          (<code>in</code> = <code>not</code> = <code>is</code> = <code><</code> = <code>></code> = <code><=</code> = <code>>=</code>) ->
+          <code>not</code> ->
+          <code>and</code> ->
+          <code>or</code>
+        </p>
+        <p>Other operators and tokens are precedence-neutral.</p>
 
-				<h3 id="Arithmetic-ops">Arithmetic operators</h3>
-				<table class="table table-condensed table-striped">
-					<thead>
-						<tr>
-							<th>Operator</th>
-							<th>Description</th>
-							<th>Example</th>
-							<th>Notes</th>
-							<th>Support</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td><code>+</code></td>
-							<td>addition</td>
-							<td><code>2 + 3</code> -> <code>5</code></td>
-							<td><code>+</code> is also a <a href="#Concatenation-ops">concatenation operator</a></td>
-							<td class="text-center"><i class="Py"></i> <i class="JS"></i></td>
-						</tr>
-						<tr>
-							<td><code>-</code></td>
-							<td>subtraction</td>
-							<td><code>2 - 3</code> -> <code>-1</code></td>
-							<td></td>
-							<td class="text-center"><i class="Py"></i> <i class="JS"></i></td>
-						</tr>
-						<tr>
-							<td><code>*</code></td>
-							<td>multiplication</td>
-							<td><code>2 * 3</code> -> <code>6</code></td>
-							<td>Alternative use is <em>select all objects from array</em></td>
-							<td class="text-center"><i class="Py"></i> <i class="JS"></i></td>
-						</tr>
-						<tr>
-							<td><code>/</code></td>
-							<td>division</td>
-							<td><code>2/3</code> -> <code>0.6666666666666666</code></td>
-							<td>Integer division results in floating point number. Use int() built-in function to turn it into integer again.</td>
-							<td class="text-center"><i class="Py"></i> <i class="JS"></i></td>
-						</tr>
-						<tr>
-							<td><code>%</code></td>
-							<td>modulo</td>
-							<td><code>10%3</code> -> <code>1</code></td>
-							<td></td>
-							<td class="text-center"><i class="Py"></i> <i class="JS"></i></td>
-						</tr>
-					</tbody>
-				</table>
+        <h3 id="Arithmetic-ops">Arithmetic operators</h3>
+        <table class="table table-condensed table-striped">
+          <thead>
+            <tr>
+              <th>Operator</th>
+              <th>Description</th>
+              <th>Example</th>
+              <th>Notes</th>
+              <th>Support</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code>+</code></td>
+              <td>addition</td>
+              <td><code>2 + 3</code> -> <code>5</code></td>
+              <td><code>+</code> is also a <a href="#Concatenation-ops">concatenation operator</a></td>
+              <td class="text-center"><i class="Py"></i> <i class="JS"></i></td>
+            </tr>
+            <tr>
+              <td><code>-</code></td>
+              <td>subtraction</td>
+              <td><code>2 - 3</code> -> <code>-1</code></td>
+              <td></td>
+              <td class="text-center"><i class="Py"></i> <i class="JS"></i></td>
+            </tr>
+            <tr>
+              <td><code>*</code></td>
+              <td>multiplication</td>
+              <td><code>2 * 3</code> -> <code>6</code></td>
+              <td>Alternative use is <em>select all objects from array</em></td>
+              <td class="text-center"><i class="Py"></i> <i class="JS"></i></td>
+            </tr>
+            <tr>
+              <td><code>/</code></td>
+              <td>division</td>
+              <td><code>2/3</code> -> <code>0.6666666666666666</code></td>
+              <td>Integer division results in floating point number. Use int() built-in function to turn it into integer again.</td>
+              <td class="text-center"><i class="Py"></i> <i class="JS"></i></td>
+            </tr>
+            <tr>
+              <td><code>%</code></td>
+              <td>modulo</td>
+              <td><code>10%3</code> -> <code>1</code></td>
+              <td></td>
+              <td class="text-center"><i class="Py"></i> <i class="JS"></i></td>
+            </tr>
+          </tbody>
+        </table>
 
-				<h3 id="Boolean-ops">Boolean logic operators</h3>
-				<table class="table table-condensed table-striped">
-					<thead>
-						<tr>
-							<th>Operator</th>
-							<th>Description</th>
-							<th>Example</th>
-							<th>Notes</th>
-							<th>Support</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td><code>not</code></td>
-							<td>negation</td>
-							<td><code>not 3</code> -> <code>false</code></td>
-							<td><em>not</em> always casts result to boolean type</td>
-							<td class="text-center"><i class="Py"></i> <i class="JS"></i></td>
-						</tr>
-						<tr>
-							<td><code>and</code></td>
-							<td>conjunction</td>
-							<td><code>true and false</code> -> <code>false</code></td>
-							<td><em>and</em> evaluates expression on the left-hand side, if negative it is returned; expression on the right-hand side is not evaluated.</td>
-							<td class="text-center"><i class="Py"></i> <i class="JS"></i></td>
-						</tr>
-						<tr>
-							<td><code>or</code></td>
-							<td>alternation</td>
-							<td><code>true or false</code> -> <code>true</code></td>
-							<td><em>or</em> evaluates expression on the left-hand side, if positive it is returned; expression on the right-hand side is not evaluated.</td>
-							<td class="text-center"><i class="Py"></i> <i class="JS"></i></td>
-						</tr>
-					</tbody>
-				</table>
+        <h3 id="Boolean-ops">Boolean logic operators</h3>
+        <table class="table table-condensed table-striped">
+          <thead>
+            <tr>
+              <th>Operator</th>
+              <th>Description</th>
+              <th>Example</th>
+              <th>Notes</th>
+              <th>Support</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code>not</code></td>
+              <td>negation</td>
+              <td><code>not 3</code> -> <code>false</code></td>
+              <td><em>not</em> always casts result to boolean type</td>
+              <td class="text-center"><i class="Py"></i> <i class="JS"></i></td>
+            </tr>
+            <tr>
+              <td><code>and</code></td>
+              <td>conjunction</td>
+              <td><code>true and false</code> -> <code>false</code></td>
+              <td><em>and</em> evaluates expression on the left-hand side, if negative it is returned; expression on the right-hand side is not evaluated.</td>
+              <td class="text-center"><i class="Py"></i> <i class="JS"></i></td>
+            </tr>
+            <tr>
+              <td><code>or</code></td>
+              <td>alternation</td>
+              <td><code>true or false</code> -> <code>true</code></td>
+              <td><em>or</em> evaluates expression on the left-hand side, if positive it is returned; expression on the right-hand side is not evaluated.</td>
+              <td class="text-center"><i class="Py"></i> <i class="JS"></i></td>
+            </tr>
+          </tbody>
+        </table>
 
-				<h3 id="Comparison-ops">Comparison operators</h3>
-				<p>ObjectPath uses algorithms that guess types of data. In most cases you don't need to worry about issues with types (e.g. comparing string <span class="string">"2"</span> with number <span class="number">2</span> works as if <span class="number">2</span> was a string). To check if types are the same or different you can use <code>type("2") is type(2)</code> -> <code>false</code>.</p>
-				<p>In semi-structured data a very common issue is that the data are represented as a different type than it was supposed to be. For example very often we can see numbers represented as strings (like <code>["1", "2", "3"]</code> instead of simply <code>[1,2,3]</code>). This is caused by automatic JSON generators, especially those that convert XML data into JSON. In programming languages such as Javascript this can cause many headashes and hours wasted figuring out why the code doesn't work. That's why:</p>
-				<div class="alert alert-info" role="alert"><i class="fa fa-info-circle fa-3x pull-left"></i>Comparison operators try to cast the right-hand side expression result to the type of the left-hand side expression result. Sometimes it fails so best practice is to use casting functions when types might be different.</div>
-				<div class="alert alert-warning" role="alert"><i class="fa fa-warning fa-3x pull-left"></i>The comparison operators are not chainable so <code>1 &lt; 2 &lt; 2</code> will compare <span class="number">2</span> with result of <code>1 &lt; 2</code> which is <em>true</em> and return <em>true</em>. Use <code>1 &lt; 2 and 2 &lt; 3</code> instead.</div>
-				<table class="table table-condensed table-striped">
-					<thead>
-						<tr>
-							<th>Operator</th>
-							<th>Description</th>
-							<th>Example</th>
-							<th>Notes</th>
-							<th>Support</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td><code>is</code></td>
-							<td>equality</td>
-							<td><code>'3' is 3</code> -> <code>true</code></td>
-							<td><s>right expression result is casted to the type of left expression result and then compared</s></td>
-							<td class="text-center"><i class="Py"></i> <i class="JS"></i></td>
-						</tr>
-						<tr>
-							<td><code>is not</code></td>
-							<td>equality negation</td>
-							<td><code>3 is not 3</code> -> <code>false</code></td>
-							<td></td>
-							<td class="text-center"><i class="Py"></i> <i class="JS"></i></td>
-						</tr>
-						<tr>
-							<td><code>&gt;</code>, <code>&gt;=</code>, <code>&lt;</code>, <code>&lt;=</code></td>
-							<td>grater than, grater than or equal, less than, less than or equal</td>
-							<td><code>1 &gt; 0</code> -&gt; <code>true</code></td>
-							<td>
-							</td>
-							<td class="text-center"><i class="Py"></i> <i class="JS"></i></td>
-						</tr>
-					</tbody>
-				</table>
+        <h3 id="Comparison-ops">Comparison operators</h3>
+        <p>ObjectPath uses algorithms that guess types of data. In most cases you don't need to worry about issues with types (e.g. comparing string <span class="string">"2"</span> with number <span class="number">2</span> works as if <span class="number">2</span> was a string). To check if types are the same or different you can use <code>type("2") is type(2)</code> -> <code>false</code>.</p>
+        <p>In semi-structured data a very common issue is that the data are represented as a different type than it was supposed to be. For example very often we can see numbers represented as strings (like <code>["1", "2", "3"]</code> instead of simply <code>[1,2,3]</code>). This is caused by automatic JSON generators, especially those that convert XML data into JSON. In programming languages such as Javascript this can cause many headashes and hours wasted figuring out why the code doesn't work. That's why:</p>
+        <div class="alert alert-info" role="alert"><i class="fa fa-info-circle fa-3x pull-left"></i>Comparison operators try to cast the right-hand side expression result to the type of the left-hand side expression result. Sometimes it fails so best practice is to use casting functions when types might be different.</div>
+        <div class="alert alert-warning" role="alert"><i class="fa fa-warning fa-3x pull-left"></i>The comparison operators are not chainable so <code>1 &lt; 2 &lt; 2</code> will compare <span class="number">2</span> with result of <code>1 &lt; 2</code> which is <em>true</em> and return <em>true</em>. Use <code>1 &lt; 2 and 2 &lt; 3</code> instead.</div>
+        <table class="table table-condensed table-striped">
+          <thead>
+            <tr>
+              <th>Operator</th>
+              <th>Description</th>
+              <th>Example</th>
+              <th>Notes</th>
+              <th>Support</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code>is</code></td>
+              <td>equality</td>
+              <td><code>'3' is 3</code> -> <code>true</code></td>
+              <td><s>right expression result is casted to the type of left expression result and then compared</s></td>
+              <td class="text-center"><i class="Py"></i> <i class="JS"></i></td>
+            </tr>
+            <tr>
+              <td><code>is not</code></td>
+              <td>equality negation</td>
+              <td><code>3 is not 3</code> -> <code>false</code></td>
+              <td></td>
+              <td class="text-center"><i class="Py"></i> <i class="JS"></i></td>
+            </tr>
+            <tr>
+              <td><code>&gt;</code>, <code>&gt;=</code>, <code>&lt;</code>, <code>&lt;=</code></td>
+              <td>grater than, grater than or equal, less than, less than or equal</td>
+              <td><code>1 &gt; 0</code> -&gt; <code>true</code></td>
+              <td>
+              </td>
+              <td class="text-center"><i class="Py"></i> <i class="JS"></i></td>
+            </tr>
+          </tbody>
+        </table>
 
-				<h3 id="Membership-ops">Membership tests</h3>
-				<table class="table table-condensed table-striped">
-					<thead>
-						<tr>
-							<th>Operator</th>
-							<th>Description</th>
-							<th>Example</th>
-							<th>Notes</th>
-							<th>Support</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td><code>in</code></td>
-							<td>Checks if the result of the left side of expression is in <em>array</em>, <em>object</em> or <em>string</em></td>
-							<td><code>3 in [1,2,4]</code> -> <code>false</code>, <br /><code>"ia" in "Adrian"</code> -> <code>true</code></td>
-							<td>In objects, keys are matched.</td>
-							<td class="text-center"><i class="Py"></i></td>
-						</tr>
-						<tr>
-							<td><code>not in</code></td>
-							<td>Opposite behavior to <code>in</code>; Equivalent to <code>not expr in array</code></td>
-							<td><code>1 not in [1,2,3]</code> -> <code>false</code></td>
-							<td></td>
-							<td class="text-center"><i class="Py"></i></td>
-						</tr>
-					</tbody>
-				</table>
+        <h3 id="Membership-ops">Membership tests</h3>
+        <table class="table table-condensed table-striped">
+          <thead>
+            <tr>
+              <th>Operator</th>
+              <th>Description</th>
+              <th>Example</th>
+              <th>Notes</th>
+              <th>Support</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code>in</code></td>
+              <td>Checks if the result of the left side of expression is in <em>array</em>, <em>object</em> or <em>string</em></td>
+              <td><code>3 in [1,2,4]</code> -> <code>false</code>, <br /><code>"ia" in "Adrian"</code> -> <code>true</code></td>
+              <td>In objects, keys are matched.</td>
+              <td class="text-center"><i class="Py"></i></td>
+            </tr>
+            <tr>
+              <td><code>not in</code></td>
+              <td>Opposite behavior to <code>in</code>; Equivalent to <code>not expr in array</code></td>
+              <td><code>1 not in [1,2,3]</code> -> <code>false</code></td>
+              <td></td>
+              <td class="text-center"><i class="Py"></i></td>
+            </tr>
+          </tbody>
+        </table>
 
-				<h3 id="Concatenation-ops">Concatenation operator <code>+</code></h3>
-				<p>Besides standard addition of numbers, <code>+</code> concatenates strings, arrays and objects.</p>
-				<p>If two arrays are concatenated, right array elements are added to the end of the left array.</p>
-				<p>If string is concatenated with array, it is added to the beggining or end of array depending on the order:</p>
-				<p>Objects are merged so that right object overwrites existing elements of left object. Object concatenation is not deep. It means that only direct child elements of root element are overwritten rather than <strong><a title="Leaf node" href="//en.wikipedia.org/wiki/Leaf_node">leaf nodes</a></strong>.</p>
-				<pre class="sh_javascript">>>> [1, 2, 4] + [3, 5]
+        <h3 id="Concatenation-ops">Concatenation operator <code>+</code></h3>
+        <p>Besides standard addition of numbers, <code>+</code> concatenates strings, arrays and objects.</p>
+        <p>If two arrays are concatenated, right array elements are added to the end of the left array.</p>
+        <p>If string is concatenated with array, it is added to the beggining or end of array depending on the order:</p>
+        <p>Objects are merged so that right object overwrites existing elements of left object. Object concatenation is not deep. It means that only direct child elements of root element are overwritten rather than <strong><a title="Leaf node" href="//en.wikipedia.org/wiki/Leaf_node">leaf nodes</a></strong>.</p>
+        <pre class="sh_javascript">>>> [1, 2, 4] + [3, 5]
 [1, 2, 4, 3, 5]
 >>> "aaa"+["bbb"]
 ["aaa", "bbb"]
@@ -320,430 +320,431 @@
 >>> {"a":1, "b":2} + {"a":2, "c":3}
 {"a":2, "b":2, "c":3}</pre>
 
-				<h2 id="Functions">Built-in functions</h2>
-				<h3 id="Casting-fns">Casting functions</h3>
-				<p>Casting is done by passing arguments to Python functions of the same name.</p>
-				<table class="table table-condensed table-striped">
-					<thead>
-						<tr>
-							<th>Function</th>
-							<th>Example</th>
-							<th>Notes</th>
-							<th>Support</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td><code>str(<em>ANY</em>)</code></td>
-							<td><code>str(11)</code> -> <code>'11'</code></td>
-							<td></td>
-							<td class="text-center"><i class="Py"></i></td>
-						</tr>
-						<tr>
-							<td><code>int(<em>NUMBER/STRING</em>)</code></td>
-							<td><code>int(123.45)</code> -> <code>123</code></td>
-							<td></td>
-							<td class="text-center"><i class="Py"></i></td>
-						</tr>
-						<tr>
-							<td><code>float(<em>NUMBER/STRING</em>)</code></td>
-							<td><code>float('123.45')</code> -> <code>123.45</code></td>
-							<td></td>
-							<td class="text-center"><i class="Py"></i></td>
-						</tr>
-						<tr>
-							<td><code>array(<em>ANY</em>)</code></td>
-							<td><code>array(now())</code> -> <code>[2011, 4, 8, 13, 3, 55, 747070]</code></td>
-							<td></td>
-							<td class="text-center"><i class="Py"></i></td>
-						</tr>
-					</tbody>
-				</table>
+        <h2 id="Functions">Built-in functions</h2>
+        <h3 id="Casting-fns">Casting functions</h3>
+        <p>Casting is done by passing arguments to Python functions of the same name.</p>
+        <table class="table table-condensed table-striped">
+          <thead>
+            <tr>
+              <th>Function</th>
+              <th>Example</th>
+              <th>Notes</th>
+              <th>Support</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code>str(<em>ANY</em>)</code></td>
+              <td><code>str(11)</code> -> <code>'11'</code></td>
+              <td></td>
+              <td class="text-center"><i class="Py"></i></td>
+            </tr>
+            <tr>
+              <td><code>int(<em>NUMBER/STRING</em>)</code></td>
+              <td><code>int(123.45)</code> -> <code>123</code></td>
+              <td></td>
+              <td class="text-center"><i class="Py"></i></td>
+            </tr>
+            <tr>
+              <td><code>float(<em>NUMBER/STRING</em>)</code></td>
+              <td><code>float('123.45')</code> -> <code>123.45</code></td>
+              <td></td>
+              <td class="text-center"><i class="Py"></i></td>
+            </tr>
+            <tr>
+              <td><code>array(<em>ANY</em>)</code></td>
+              <td><code>array(now())</code> -> <code>[2011, 4, 8, 13, 3, 55, 747070]</code></td>
+              <td></td>
+              <td class="text-center"><i class="Py"></i></td>
+            </tr>
+          </tbody>
+        </table>
 
-				<h3 id="Arithmetic-fns">Arithmetic functions</h3>
-				<table class="table table-condensed table-striped">
-					<thead>
-						<tr>
-							<th>Function</th>
-							<th>Example</th>
-							<th>Notes</th>
-							<th>Support</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td><code>sum(<em>ARRAY</em>)</code></td>
-							<td><code>sum([1, 2, 3, 4])</code> -> <code>'10'</code></td>
-							<td>Argument is a list of numbers. If there are float numbers in the list, sum() returns float.</td>
-							<td class="text-center"><i class="Py"></i></td>
-						</tr>
-						<tr>
-							<td><code>max(<em>ARRAY</em>)</code></td>
-							<td><code>max([2, 4, 1, 3])</code> -> <code>4</code></td>
-							<td></td>
-							<td class="text-center"><i class="Py"></i></td>
-						</tr>
-						<tr>
-							<td><code>min(<em>ARRAY</em>)</code></td>
-							<td><code>min([2, 4, 1, 3])</code> -> <code>1</code></td>
-							<td></td>
-							<td class="text-center"><i class="Py"></i></td>
-						</tr>
-						<tr>
-							<td><code>avg(<em>ARRAY</em>)</code></td>
-							<td><code>avg([2, 4, 1, 3])</code> -> <code>2.5</code></td>
-							<td>Equivalent to <code>sum(array)/len(array)</code></td>
-							<td class="text-center"><i class="Py"></i></td>
-						</tr>
-						<tr>
-							<td><code>round(<em>FLOAT</em>, <em>INTEGER</em>)</code></td>
-							<td><code>round(0.55, 1)</code> -> <code>0.5</code></td>
-							<td>Always returns float. Second argument defines the precision of round.</td>
-							<td class="text-center"><i class="Py"></i></td>
-						</tr>
-					</tbody>
-				</table>
+        <h3 id="Arithmetic-fns">Arithmetic functions</h3>
+        <table class="table table-condensed table-striped">
+          <thead>
+            <tr>
+              <th>Function</th>
+              <th>Example</th>
+              <th>Notes</th>
+              <th>Support</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code>sum(<em>ARRAY</em>)</code></td>
+              <td><code>sum([1, 2, 3, 4])</code> -> <code>'10'</code></td>
+              <td>Argument is a list of numbers. If there are float numbers in the list, sum() returns float.</td>
+              <td class="text-center"><i class="Py"></i></td>
+            </tr>
+            <tr>
+              <td><code>max(<em>ARRAY</em>)</code></td>
+              <td><code>max([2, 4, 1, 3])</code> -> <code>4</code></td>
+              <td></td>
+              <td class="text-center"><i class="Py"></i></td>
+            </tr>
+            <tr>
+              <td><code>min(<em>ARRAY</em>)</code></td>
+              <td><code>min([2, 4, 1, 3])</code> -> <code>1</code></td>
+              <td></td>
+              <td class="text-center"><i class="Py"></i></td>
+            </tr>
+            <tr>
+              <td><code>avg(<em>ARRAY</em>)</code></td>
+              <td><code>avg([2, 4, 1, 3])</code> -> <code>2.5</code></td>
+              <td>Equivalent to <code>sum(array)/len(array)</code></td>
+              <td class="text-center"><i class="Py"></i></td>
+            </tr>
+            <tr>
+              <td><code>round(<em>FLOAT</em>, <em>INTEGER</em>)</code></td>
+              <td><code>round(0.55, 1)</code> -> <code>0.5</code></td>
+              <td>Always returns float. Second argument defines the precision of round.</td>
+              <td class="text-center"><i class="Py"></i></td>
+            </tr>
+          </tbody>
+        </table>
 
-				<h3 id="String-fns">String functions</h3>
-				<table class="table table-condensed table-striped">
-					<thead>
-						<tr>
-							<th>Function</th>
-							<th>Example</th>
-							<th>Notes</th>
-							<th>Support</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td><code>replace(<em>STRING</em>, <em>toReplace</em>, <em>replacement</em>)</code></td>
-							<td><code>replace('abcd','b','a')</code> -> <code>'aacd'</code></td>
-							<td></td>
-							<td class="text-center"><i class="Py"></i></td>
-						</tr>
-						<tr>
-							<td><code>escape(<em>STRING</em>)</code></td>
-							<td><code>escape('<>&\'"')</code> -> <code>"&amp;lt;&amp;gt;&amp;amp;&amp;apos;&amp;quot;"</code></td>
-							<td>Converts HTML reserved characters to their HTML equivalents.</td>
-							<td class="text-center"><i class="Py"></i></td>
-						</tr>
-						<tr>
-							<td><code>unescape(<em>STRING</em>)</code></td>
-							<td><code>unescape("&amp;lt;&amp;gt;&amp;amp;&amp;apos;&amp;quot;")</code> -> <code>'<>&\'"'</code></td>
-							<td>Reverse to the escape.</td>
-							<td class="text-center"><i class="Py"></i></td>
-						</tr>
-						<tr>
-							<td><code>upper(<em>STRING</em>)</code></td>
-							<td><code>upper('AaA')</code> -> <code>'AAA'</code></td>
-							<td></td>
-							<td class="text-center"><i class="Py"></i></td>
-						</tr>
-						<tr>
-							<td><code>lower(<em>STRING</em>)</code></td>
-							<td><code>lower('AaA')</code> -> <code>'aaa'</code></td>
-							<td></td>
-							<td class="text-center"><i class="Py"></i></td>
-						</tr>
-						<tr>
-							<td><code>capitalize(<em>STRING</em>)</code></td>
-							<td><code>capitalize('AaA')</code> -> <code>'Aaa'</code></td>
-							<td></td>
-							<td class="text-center"><i class="Py"></i></td>
-						</tr>
-						<tr>
-							<td><code>title(<em>STRING</em>)</code></td>
-							<td><code>title('aaa bbb')</code> -> <code>'Aaa Bbb'</code></td>
-							<td></td>
-							<td class="text-center"><i class="Py"></i></td>
-						</tr>
-						<tr>
-							<td><code>split(<em>STRING</em> <, <em>sep</em>>)</code></td>
-							<td>
-								<code>split('aaa bbb')</code> -> <code>['aaa', 'bbb']</code>,<br />
-								<code>split('aaa,bbb','.')</code> -> <code>['aaa', 'bbb']</code>
-							</td>
-							<td></td>
-							<td class="text-center"><i class="Py"></i></td>
-						</tr>
-						<tr>
-							<td>
-								<code>slice(<em>STRING</em>, [<em>start</em>, <em>end</em>])</code>,<br>
-								<code>slice(<em>STRING</em>, [[<em>start</em>, <em>end</em>], [<em>start</em>,<em>end</em>], ...])</code></td>
-							<td>
-								<code>slice('Hello world!', [0, 5])</code> -> <code>'Hello'</code>,<br>
-								<code>slice('Hello world!', [[0, 5], [6, 11]])</code> -> <code>["Hello", "world"])</code> -> <code>['aaa', 'bbb']</code>
-							</td>
-							<td>added in ObjectPath 0.5 <a href="#slice_fn">read more</a></td>
-							<td class="text-center"><i class="Py"></i></td>
-						</tr>
-					</tbody>
-				</table>
+        <h3 id="String-fns">String functions</h3>
+        <table class="table table-condensed table-striped">
+          <thead>
+            <tr>
+              <th>Function</th>
+              <th>Example</th>
+              <th>Notes</th>
+              <th>Support</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code>replace(<em>STRING</em>, <em>toReplace</em>, <em>replacement</em>)</code></td>
+              <td><code>replace('abcd','b','a')</code> -> <code>'aacd'</code></td>
+              <td></td>
+              <td class="text-center"><i class="Py"></i></td>
+            </tr>
+            <tr>
+              <td><code>escape(<em>STRING</em>)</code></td>
+              <td><code>escape('<>&\'"')</code> -> <code>"&amp;lt;&amp;gt;&amp;amp;&amp;apos;&amp;quot;"</code></td>
+              <td>Converts HTML reserved characters to their HTML equivalents.</td>
+              <td class="text-center"><i class="Py"></i></td>
+            </tr>
+            <tr>
+              <td><code>unescape(<em>STRING</em>)</code></td>
+              <td><code>unescape("&amp;lt;&amp;gt;&amp;amp;&amp;apos;&amp;quot;")</code> -> <code>'<>&\'"'</code></td>
+              <td>Reverse to the escape.</td>
+              <td class="text-center"><i class="Py"></i></td>
+            </tr>
+            <tr>
+              <td><code>upper(<em>STRING</em>)</code></td>
+              <td><code>upper('AaA')</code> -> <code>'AAA'</code></td>
+              <td></td>
+              <td class="text-center"><i class="Py"></i></td>
+            </tr>
+            <tr>
+              <td><code>lower(<em>STRING</em>)</code></td>
+              <td><code>lower('AaA')</code> -> <code>'aaa'</code></td>
+              <td></td>
+              <td class="text-center"><i class="Py"></i></td>
+            </tr>
+            <tr>
+              <td><code>capitalize(<em>STRING</em>)</code></td>
+              <td><code>capitalize('AaA')</code> -> <code>'Aaa'</code></td>
+              <td></td>
+              <td class="text-center"><i class="Py"></i></td>
+            </tr>
+            <tr>
+              <td><code>title(<em>STRING</em>)</code></td>
+              <td><code>title('aaa bbb')</code> -> <code>'Aaa Bbb'</code></td>
+              <td></td>
+              <td class="text-center"><i class="Py"></i></td>
+            </tr>
+            <tr>
+              <td><code>split(<em>STRING</em> <, <em>sep</em>>)</code></td>
+              <td>
+                <code>split('aaa bbb')</code> -> <code>['aaa', 'bbb']</code>,<br />
+                <code>split('aaa,bbb','.')</code> -> <code>['aaa', 'bbb']</code>
+              </td>
+              <td></td>
+              <td class="text-center"><i class="Py"></i></td>
+            </tr>
+            <tr>
+              <td>
+                <code>slice(<em>STRING</em>, [<em>start</em>, <em>end</em>])</code>,<br>
+                <code>slice(<em>STRING</em>, [[<em>start</em>, <em>end</em>], [<em>start</em>,<em>end</em>], ...])</code></td>
+              <td>
+                <code>slice('Hello world!', [0, 5])</code> -> <code>'Hello'</code>,<br>
+                <code>slice('Hello world!', [[0, 5], [6, 11]])</code> -> <code>["Hello", "world"])</code> -> <code>['aaa', 'bbb']</code>
+              </td>
+              <td>added in ObjectPath 0.5 <a href="#slice_fn">read more</a></td>
+              <td class="text-center"><i class="Py"></i></td>
+            </tr>
+          </tbody>
+        </table>
 
-				<h4 id="slice_fn">The slice() function (added in ObjectPath 0.5)</h4>
-				<p>Extracts a section of a string and returns a new string. The usage is:</p>
-				<pre class="sh_python">slice(string, [start, end])
+        <h4 id="slice_fn">The slice() function (added in ObjectPath 0.5)</h4>
+        <p>Extracts a section of a string and returns a new string. The usage is:</p>
+        <pre class="sh_python">slice(string, [start, end])
 slice(string, [[start, end], [start2, end2], ...])</pre>
-				<p>The first argument is always a string. The second argument can be either an array of two numbers (<em>start</em> and <em>end</em> positions) or an array of arrays of two numbers (<em>start</em> and <em>end</em> position). If position is negative, then position is counted starting from the end of the string. Examples:</p>
-				<pre class="sh_python">slice("Hello world!", [6, 11]) -&gt; "world"<br />slice("Hello world!", [6, -1]) -&gt; "world"<br />slice("Hello world!", [[0, 5], [6, 11]]) -&gt; ["Hello", "world"]
-				</pre>
+        <p>The first argument is always a string. The second argument can be either an array of two numbers (<em>start</em> and <em>end</em> positions) or an array of arrays of two numbers (<em>start</em> and <em>end</em> position). If position is negative, then position is counted starting from the end of the string. Examples:</p>
+        <pre class="sh_python">slice("Hello world!", [6, 11]) -&gt; "world"<br />slice("Hello world!", [6, -1]) -&gt; "world"<br />slice("Hello world!", [[0, 5], [6, 11]]) -&gt; ["Hello", "world"]
+        </pre>
 
-				<h3 id="Array-fns">Array functions</h3>
-				<table class="table table-condensed table-striped">
-					<thead>
-						<tr>
-							<th>Function</th>
-							<th>Example</th>
-							<th>Notes</th>
-							<th>Support</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td><code>sort(<em>ARRAY</em> <, key>)</code></td>
-							<td>
-								<code>sort(['c', 'b', 'a'])</code> -> <code>['a', 'b', 'c']</code>,<br />
-								<code>sort([{v:'c', x:1},{v:'b', x:2},{v:'a', x:3}], 'v')</code> -&gt;
-								<code>[{v:'a', x:3}, {v:'b', x:2}, {v:'c', x:1}]</code>
-							</td>
-							<td>If key is provided, will sort array of objects by key.</td>
-							<td class="text-center"><i class="Py"></i></td>
-						</tr>
-						<tr>
-							<td><code>reverse(array)</code></td>
-							<td><code>reverse([1,3,2,2,5])</code> -> <code>[5,2,2,3,1]</code></td>
-							<td><span style="color: #d9534f;"><i class="fa fa-warning"></i> Reverse may be very slow for large data.</span></td>
-							<td class="text-center"><i class="Py"></i></td>
-						</tr>
-						<tr>
-							<td><code>count(<em>ARRAY</em>)</code>, <code>len(<em>ARRAY</em>)</code></td>
-							<td><code>count([1, 2, 3])</code> -> <code>3</code></td>
-							<td>Reverse to the escape.</td>
-							<td class="text-center"><i class="Py"></i></td>
-						</tr>
-						<tr>
-							<td><code>join(<em>ARRAY</em> <, <em>joiner</em>>)</code></td>
-							<td>
-								<code>join(['c', 'b', 'a'])</code> -> <code>'cba'</code>,<br />
-								<code>join(['c', 'b', 'a'], '.')</code> -> <code>'c.b.a'</code></td>
-							<td></td>
-							<td class="text-center"><i class="Py"></i></td>
-						</tr>
-					</tbody>
-				</table>
+        <h3 id="Array-fns">Array functions</h3>
+        <table class="table table-condensed table-striped">
+          <thead>
+            <tr>
+              <th>Function</th>
+              <th>Example</th>
+              <th>Notes</th>
+              <th>Support</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code>sort(<em>ARRAY</em> <, key>)</code></td>
+              <td>
+                <code>sort(['c', 'b', 'a'])</code> -> <code>['a', 'b', 'c']</code>,<br />
+                <code>sort([{v:'c', x:1},{v:'b', x:2},{v:'a', x:3}], 'v')</code> -&gt;
+                <code>[{v:'a', x:3}, {v:'b', x:2}, {v:'c', x:1}]</code>
+              </td>
+              <td>If key is provided, will sort array of objects by key.</td>
+              <td class="text-center"><i class="Py"></i></td>
+            </tr>
+            <tr>
+              <td><code>reverse(array)</code></td>
+              <td><code>reverse([1,3,2,2,5])</code> -> <code>[5,2,2,3,1]</code></td>
+              <td><span style="color: #d9534f;"><i class="fa fa-warning"></i> Reverse may be very slow for large data.</span></td>
+              <td class="text-center"><i class="Py"></i></td>
+            </tr>
+            <tr>
+              <td><code>count(<em>ARRAY</em>)</code>, <code>len(<em>ARRAY</em>)</code></td>
+              <td><code>count([1, 2, 3])</code> -> <code>3</code></td>
+              <td>Reverse to the escape.</td>
+              <td class="text-center"><i class="Py"></i></td>
+            </tr>
+            <tr>
+              <td><code>join(<em>ARRAY</em> <, <em>joiner</em>>)</code></td>
+              <td>
+                <code>join(['c', 'b', 'a'])</code> -> <code>'cba'</code>,<br />
+                <code>join(['c', 'b', 'a'], '.')</code> -> <code>'c.b.a'</code></td>
+              <td></td>
+              <td class="text-center"><i class="Py"></i></td>
+            </tr>
+          </tbody>
+        </table>
 
-				<h3 id="DateTime-fns">Date and time functions</h3>
-				<p>All date and time functions are manipulating <em>datetime</em> objects. The default (and the only!) timezone is UTC.</p>
-				<table class="table table-condensed table-striped">
-					<thead>
-						<tr>
-							<th>Function</th>
-							<th>Example</th>
-							<th>Notes</th>
-							<th>Support</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td><code>now()</code></td>
-							<td><code>now()</code> -> <code>'2011-04-08 13:03:55.747070'</code></td>
-							<td>Gets current UTC time.</td>
-							<td class="text-center"><i class="Py"></i></td>
-						</tr>
-						<tr>
-							<td><code>date(<em>arg</em>)</code></td>
-							<td>
-								<code>date()</code> -> <code>'2011-04-08'</code>,<br />
-								<code>date([2011, 4, 8])</code> -> <code>'2011-04-08'</code>,<br />
-								<code>date(now())</code> -> <code>'2011-04-08'</code>
-							</td>
-							<td><em>arg</em> can be array of structure [yyyy,mm,dd] or <em>datetime</em> object . If no arg is specified then <code>date()</code> defaults to current UTC date.</td>
-							<td class="text-center"><i class="Py"></i></td>
-						</tr>
-						<tr>
-							<td><code>time(<em>arg</em>)</code></td>
-							<td>
-								<code>time()</code> -> <code>'13:03:55.747070'</code>,<br />
-								<code>time([13, 3, 55, 747070])</code> -> <code>'13:03:55.747070'</code>,<br />
-								<code>time(now())</code> -> <code>'13:03:55.747070'</code>
-							</td>
-							<td><em>arg</em> can be array of structure [hh,mm,ss,mmmmmm] where only hour is required, or <em>datetime</em> object . If no arg is specified then <em>time()</em> defaults to current UTC time.</td>
-							<td class="text-center"><i class="Py"></i></td>
-						</tr>
-						<tr>
-							<td><code>dateTime(<em>args</em>)</td>
-							<td>
-								<code>dateTime(now())</code> -> <code>'2011-04-08 13:03:55.747070'</code>,<br />
-								<code>dateTime([2011, 4, 8, 13, 3, 55, 747070])</code> -> <code>'2011-04-08 13:03:55.747070'</code>,<br />
-								<code>dateTime(date(), time())</code> -> <code>'2011-04-08 13:03:55.747070'</code>,<br />
-								<code>dateTime([2011, 4, 8], time())</code> -> <code>'2011-04-08 13:03:55.747070'</code>
-							</td>
-							<td><em>args</em>: if one argument is specified then it need to be <em>datetime</em> object or <em>[yyyy, mm, dd, hh, mm, ss, mmmmmm]</em> where <em>year</em>, <em>month</em>, <em>day</em>, <em>hour</em> and <em>minute</em> are required. If two arguments are specified, the first argument can be <em>date</em> object or <em>[yyyy, mm, dd]</em> array, second can be <em>time</em> object or <em>[hh, mm, ss, mmmmmm]</em> array where only hour is required.</td>
-							<td class="text-center"><i class="Py"></i></td>
-						</tr>
-						<tr>
-							<td><code>age(time)</code></td>
-							<td><code>age(sometime)</code> -> <code>[1, 'week']</code></td>
-							<td>Counts how old the provided time is and prettyprints it.</td>
-							<td class="text-center"><i class="Py"></i></td>
-						</tr>
-						<tr>
-							<td><code>toMillis(time)</code></td>
-							<td></td>
-							<td>Counts milliseconds since epoch.</td>
-							<td class="text-center"><i class="Py"></i></td>
-						</tr>
-					</tbody>
-				</table>
+        <h3 id="DateTime-fns">Date and time functions</h3>
+        <p>All date and time functions are manipulating <em>datetime</em> objects. The default (and the only!) timezone is UTC.</p>
+        <table class="table table-condensed table-striped">
+          <thead>
+            <tr>
+              <th>Function</th>
+              <th>Example</th>
+              <th>Notes</th>
+              <th>Support</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code>now()</code></td>
+              <td><code>now()</code> -> <code>'2011-04-08 13:03:55.747070'</code></td>
+              <td>Gets current UTC time.</td>
+              <td class="text-center"><i class="Py"></i></td>
+            </tr>
+            <tr>
+              <td><code>date(<em>arg</em>)</code></td>
+              <td>
+                <code>date()</code> -> <code>'2011-04-08'</code>,<br />
+                <code>date([2011, 4, 8])</code> -> <code>'2011-04-08'</code>,<br />
+                <code>date(now())</code> -> <code>'2011-04-08'</code>
+              </td>
+              <td><em>arg</em> can be array of structure [yyyy,mm,dd] or <em>datetime</em> object . If no arg is specified then <code>date()</code> defaults to current UTC date.</td>
+              <td class="text-center"><i class="Py"></i></td>
+            </tr>
+            <tr>
+              <td><code>time(<em>arg</em>)</code></td>
+              <td>
+                <code>time()</code> -> <code>'13:03:55.747070'</code>,<br />
+                <code>time([13, 3, 55, 747070])</code> -> <code>'13:03:55.747070'</code>,<br />
+                <code>time(now())</code> -> <code>'13:03:55.747070'</code>
+              </td>
+              <td><em>arg</em> can be array of structure [hh,mm,ss,mmmmmm] where only hour is required, or <em>datetime</em> object . If no arg is specified then <em>time()</em> defaults to current UTC time.</td>
+              <td class="text-center"><i class="Py"></i></td>
+            </tr>
+            <tr>
+              <td><code>dateTime(<em>args</em>)</td>
+              <td>
+                <code>dateTime(now())</code> -> <code>'2011-04-08 13:03:55.747070'</code>,<br />
+                <code>dateTime([2011, 4, 8, 13, 3, 55, 747070])</code> -> <code>'2011-04-08 13:03:55.747070'</code>,<br />
+                <code>dateTime(date(), time())</code> -> <code>'2011-04-08 13:03:55.747070'</code>,<br />
+                <code>dateTime([2011, 4, 8], time())</code> -> <code>'2011-04-08 13:03:55.747070'</code>
+              </td>
+              <td><em>args</em>: if one argument is specified then it need to be <em>datetime</em> object or <em>[yyyy, mm, dd, hh, mm, ss, mmmmmm]</em> where <em>year</em>, <em>month</em>, <em>day</em>, <em>hour</em> and <em>minute</em> are required. If two arguments are specified, the first argument can be <em>date</em> object or <em>[yyyy, mm, dd]</em> array, second can be <em>time</em> object or <em>[hh, mm, ss, mmmmmm]</em> array where only hour is required.</td>
+              <td class="text-center"><i class="Py"></i></td>
+            </tr>
+            <tr>
+              <td><code>age(time)</code></td>
+              <td><code>age(sometime)</code> -> <code>[1, 'week']</code></td>
+              <td>Counts how old the provided time is and prettyprints it.</td>
+              <td class="text-center"><i class="Py"></i></td>
+            </tr>
+            <tr>
+              <td><code>toMillis(time)</code></td>
+              <td></td>
+              <td>Counts milliseconds since epoch.</td>
+              <td class="text-center"><i class="Py"></i></td>
+            </tr>
+          </tbody>
+        </table>
 
-				<h3 id="Misc-fns">Misc functions</h3>
-				<table class="table table-condensed table-striped">
-					<thead>
-						<tr>
-							<th>Function</th>
-							<th>Example</th>
-							<th>Notes</th>
-							<th>Support</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td><code>type(<em>ANY</em>)</code></td>
-							<td><code>type([1,3,2,5])</code> -> <code>'array'</code></td>
-							<td>Tool helpful in debugging expressions.</td>
-							<td class="text-center"><i class="Py"></i></td>
-						</tr>
-						<tr>
-							<td><code>count(any), len(any)</code></td>
-							<td><code>count("abcd")</code> -> <code>4</code></td>
-							<td>Counts elements in a given argument. If element is not countable, it is returned unmodified.</td>
-							<td class="text-center"><i class="Py"></i></td>
-						</tr>
-						<tr>
-							<td><code>generateID()</code></td>
-							<td></td>
-							<td>Generates unique ID</td>
-							<td class="text-center"><i class="Py"></i></td>
-						</tr>
-<!--						<tr>
-							<td><code>objectID(oidString)</code>, <code>ObjectId(oidString)</code></td>
-							<td></td>
-							<td>MongoDB helper function.</td>
-							<td class="text-center"><i class="Py"></i></td>
-						</tr>-->
-					</tbody>
-				</table>
+        <h3 id="Misc-fns">Misc functions</h3>
+        <table class="table table-condensed table-striped">
+          <thead>
+            <tr>
+              <th>Function</th>
+              <th>Example</th>
+              <th>Notes</th>
+              <th>Support</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code>type(<em>ANY</em>)</code></td>
+              <td><code>type([1,3,2,5])</code> -> <code>'array'</code></td>
+              <td>Tool helpful in debugging expressions.</td>
+              <td class="text-center"><i class="Py"></i></td>
+            </tr>
+            <tr>
+              <td><code>count(any), len(any)</code></td>
+              <td><code>count("abcd")</code> -> <code>4</code></td>
+              <td>Counts elements in a given argument. If element is not countable, it is returned unmodified.</td>
+              <td class="text-center"><i class="Py"></i></td>
+            </tr>
+            <tr>
+              <td><code>generateID()</code></td>
+              <td></td>
+              <td>Generates unique ID</td>
+              <td class="text-center"><i class="Py"></i></td>
+            </tr>
+<!--            <tr>
+              <td><code>objectID(oidString)</code>, <code>ObjectId(oidString)</code></td>
+              <td></td>
+              <td>MongoDB helper function.</td>
+              <td class="text-center"><i class="Py"></i></td>
+            </tr>-->
+          </tbody>
+        </table>
 
-				<h3 id="Localization-fns">Localization function</h3>
-				<p><code>Localize()</code> function tries to localize an argument. Now it works only for dates and times, but it is meant to support numbers and currencies.</p>
-				<p>It is good idea to store UTC times in the database and show localized time to the user. To show localized current time in Warsaw, Poland use <code>localize()</code> function as following:</p>
-				<pre class="sh_python">localize(now(),'Europe/Warsaw')</pre>
+        <h3 id="Localization-fns">Localization function</h3>
+        <p><code>Localize()</code> function tries to localize an argument. Now it works only for dates and times, but it is meant to support numbers and currencies.</p>
+        <p>It is good idea to store UTC times in the database and show localized time to the user. To show localized current time in Warsaw, Poland use <code>localize()</code> function as following:</p>
+        <pre class="sh_python">localize(now(),'Europe/Warsaw')</pre>
 
-				<h2 id="Paths">Paths</h2>
-				<p>Paths uses dot notation:</p>
-				<pre class="sh_python">$.attributeName[selector].attributeName2</pre>
-				<p>where <code>$</code> is root element, <!--<em>ns</em> is optional and defaults to local namespace (request storage in AC Runtime), --><code>.</code> selects all direct child elements from node, <em>attributeName</em> restricts these elements to those containing attribute of name <em>attributeName</em> and <code>[]</code> contains selector expression which restrict results even more. <em>attributeName2</em> selects child elements from results of previous computation.</p>
+        <h2 id="Paths">Paths</h2>
+        <p>Paths uses dot notation:</p>
+        <pre class="sh_python">$.attributeName[selector].attributeName2</pre>
+        <p>where <code>$</code> is root element, <!--<em>ns</em> is optional and defaults to local namespace (request storage in AC Runtime), --><code>.</code> selects all direct child elements from node, <em>attributeName</em> restricts these elements to those containing attribute of name <em>attributeName</em> and <code>[]</code> contains selector expression which restrict results even more. <em>attributeName2</em> selects child elements from results of previous computation.</p>
 
-				<h3 id="CompleteSyntax">Complete syntax</h3>
-				<p>Following table contains complete syntax of paths (near identical to the JSONPath table):</p>
-				<table class="table table-condensed table-stripped">
-					<thead>
-					<tr>
-						<td><strong></strong>Operator</td>
-						<td><strong>Description</strong></td>
-					</tr>
-					</thead>
-					<tbody>
-					<tr>
-						<td>$</td>
-						<td>the root object/element</td>
-					</tr>
-					<tr>
-						<td>@</td>
-						<td>the current object/element</td>
-					</tr>
-					<tr>
-						<td>.</td>
-						<td>child/property operator</td>
-					</tr>
-					<tr>
-						<td>..</td>
-						<td>recursive descent. ObjectPath borrows this syntax from E4X (and JSONPath).</td>
-					</tr>
-					<tr>
-						<td>*</td>
-						<td>wildcard. All objects/elements regardless their names.</td>
-					</tr>
-					<tr>
-						<td>[]</td>
-						<td>selector operator. Full documentation is available in next chapter.</td>
-					</tr>
-					<tr>
-						<td><s>[start:end:step]</s></td>
-						<td><s>NOT IMPLEMENTED YET array slice operator borrowed from ES4.</s></td>
-					</tr>
-					</tbody>
-				</table>
+        <h3 id="CompleteSyntax">Complete syntax</h3>
+        <p>Following table contains complete syntax of paths (near identical to the JSONPath table):</p>
+        <table class="table table-condensed table-stripped">
+          <thead>
+          <tr>
+            <td><strong></strong>Operator</td>
+            <td><strong>Description</strong></td>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td>$</td>
+            <td>the root object/element</td>
+          </tr>
+          <tr>
+            <td>@</td>
+            <td>the current object/element</td>
+          </tr>
+          <tr>
+            <td>.</td>
+            <td>child/property operator</td>
+          </tr>
+          <tr>
+            <td>..</td>
+            <td>recursive descent. ObjectPath borrows this syntax from E4X (and JSONPath).</td>
+          </tr>
+          <tr>
+            <td>*</td>
+            <td>wildcard. All objects/elements regardless their names.</td>
+          </tr>
+          <tr>
+            <td>[]</td>
+            <td>selector operator. Full documentation is available in next chapter.</td>
+          </tr>
+          <tr>
+            <td><s>[start:end:step]</s></td>
+            <td><s>NOT IMPLEMENTED YET array slice operator borrowed from ES4.</s></td>
+          </tr>
+          </tbody>
+        </table>
 
-				<h3 id="Selectors">Selectors</h3>
-				<p>Selector selects array elements that satisfy expression. You can be creative here and nest paths, use comparison operators or refer to other parts of the data set.</p>
-				<p>Selectors are written inside the <code>[]</code> operator.</p>
-				<p>Selectors can take number and behave as simple "give me n-th element from array":</p>
-				<pre class="sh_python">>>> $.*[1]
+        <h3 id="Selectors">Selectors</h3>
+        <p>Selector selects array elements that satisfy expression. You can be creative here and nest paths, use comparison operators or refer to other parts of the data set.</p>
+        <p>Selectors are written inside the <code>[]</code> operator.</p>
+        <p>Selectors can take number and behave as simple "give me n-th element from array":</p>
+        <pre class="sh_python">>>> $.*[1]
 # second element from array</pre>
-				<p>It also can take a string, its behavior is then similar to dot operator:</p>
-				<pre class="sh_python">>>> $..*['string'] is $..string
+        <p>It also can take a string, its behavior is then similar to dot operator:</p>
+        <pre class="sh_python">>>> $..*['string'] is $..string
 true</pre>
-				<p>Selector can use comparison operators to find elements:</p>
-				<pre class="sh_python">$..*[@.attribute is 'ok']</pre>
-				<p>and boolean operators to handle more than one condition:</p>
-				<pre class="sh_python">$..*[@.attribute is 'ok' or len(@.*[1]) is 2]</pre>
-				<p><code>@</code> operator matches current element. Selector iterates over left expression result (which is array). <code>@</code> will match the element currently checked against expression.</p>
-				<p>WARNING! <code>@</code> operator is slow! Try using or/and operators in conjunction with simple expression that should match some elements or other optimization techniques.</p>
+        <p>Selector can use comparison operators to find elements:</p>
+        <pre class="sh_python">$..*[@.attribute is 'ok']</pre>
+        <p>and boolean operators to handle more than one condition:</p>
+        <pre class="sh_python">$..*[@.attribute is 'ok' or len(@.*[1]) is 2]</pre>
+        <p><code>@</code> operator matches current element. Selector iterates over left expression result (which is array). <code>@</code> will match the element currently checked against expression.</p>
+        <p>WARNING! <code>@</code> operator is slow! Try using or/and operators in conjunction with simple expression that should match some elements or other optimization techniques.</p>
 
-				<h2>Plans to extend ObjectPath</h2>
-				<p>Most important enhancements:</p>
-				<ul>
-					<li>provide date and time manipulation built-in functions,</li>
-					<li>distinguish regex functions and string functions - regexes are slow and not necessary in most cases,</li>
-					<li>add regex matching to selectors,</li>
-				</ul>
+        <h2>Plans to extend ObjectPath</h2>
+        <p>Most important enhancements:</p>
+        <ul>
+          <li>provide date and time manipulation built-in functions,</li>
+          <li>distinguish regex functions and string functions - regexes are slow and not necessary in most cases,</li>
+          <li>add regex matching to selectors,</li>
+        </ul>
 
-				<h2>Optimization plans</h2>
-				<ul>
-					<li>make <code class="sh_python">$..*[1]</code> faster - generator will help,</li>
-					<li>replace operator names with numbers.</li>
-				</ul>
-			</div>
+        <h2>Optimization plans</h2>
+        <ul>
+          <li>make <code class="sh_python">$..*[1]</code> faster - generator will help,</li>
+          <li>replace operator names with numbers.</li>
+        </ul>
+      </div>
 
-			<div class="col-md-3" >
-				<div id="TOC" class="col-md-3 hidden-xs hidden-sm" data-spy="affix" data-offset-bottom="60" style="width: 264px;"></div>
+      <div class="col-md-3" >
+        <div id="TOC" class="col-md-3 hidden-xs hidden-sm" data-spy="affix" data-offset-bottom="60" style="width: 264px;"></div>
 
-			</div>
-		</div>
+      </div>
+    </div>
 
-		<script>
-			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-			ga('create', 'UA-36262762-3', 'objectpath.github.io/ObjectPath');
-			ga('send', 'pageview');
-		</script>
-		<script src="//code.jquery.com/jquery.min.js"></script>
-		<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.1/js/bootstrap.min.js"></script>
-		<script type="text/javascript" src="js/shjs/sh_main.min.js"></script>
-		<script type="text/javascript" src="js/shjs/sh_javascript.js"></script>
-		<script type="text/javascript" src="js/shjs/sh_python.js"></script>
-		<script>
-			$(document).ready(function(){
-				sh_highlightDocument()
-			})
-		</script>
-<!--		<script src="/js/ObjectPath/tokens.js"></script>
-		<script src="/js/ObjectPath/parse.js"></script>
-		<script src="/js/ObjectPath/interpreter.js"></script>
-		<script src="/js/ac.js"></script>-->
-		<script src="js/app.js"></script>
-	</body>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-115014195-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-115014195-1');
+    </script>
+    <script src="//code.jquery.com/jquery.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/shjs/sh_main.min.js"></script>
+    <script type="text/javascript" src="js/shjs/sh_javascript.js"></script>
+    <script type="text/javascript" src="js/shjs/sh_python.js"></script>
+    <script>
+      $(document).ready(function(){
+        sh_highlightDocument()
+      })
+    </script>
+<!--    <script src="/js/ObjectPath/tokens.js"></script>
+    <script src="/js/ObjectPath/parse.js"></script>
+    <script src="/js/ObjectPath/interpreter.js"></script>
+    <script src="/js/ac.js"></script>-->
+    <script src="js/app.js"></script>
+  </body>
 </html>
