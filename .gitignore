@@ -1,5 +1,7 @@
 .env/
 *.sw*
-objectpath.egg-info
+*.egg*
+*.pyc
+*.tar.gz
 __pycache__
 
