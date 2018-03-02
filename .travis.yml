@@ -1,7 +1,9 @@
 language: python
 python:
 - '2.7'
-- '3.3'
+- '3.4'
+- '3.5'
+- '3.6'
 - pypy
 install:
 - pip install -r requirements.txt
@@ -16,7 +18,6 @@ deploy:
     secure: DX/7qZYhHFqA2uiMjNjQtBlDaSwSW25zw4IL2kJKkAf6i5U8jtXI+MG69wCJThvIPH9Ts5Z4z74XLFuW4vEbIbk0FSEmXB4VmijbaQetsrDAHoR2pHDNlC0JrwhFHj5ZCP8Gh0f1m7wKmUMrIR0KCopeAAjuBxLqy/moWSD10osiz5jTsMhH5u8k/JfF7nqBMpBnbYXizx+tzxMgBtJM4NUJ6FkJdaAD2ajTBAi4LuwmoiUWl7Z6512RPJ4pYSlP4Ifi7pzPPloshangaw5VhPVL3binN09MwRQaJcGeB0YjG1Z/0m3V2GvsECyINw7Igsg0NnhqiNb/Uf4HdFnaBH8Wjeh0UaTwcHKHaA4tAXWBfNgYKFZ1XvRtwzhapTCamf8gSo3NU8p46qJ49P5lHrhwXucwrExQS35AudqeLu+sYEdgzeoXMfcaQGPT47R8aWDCKPqgtfW/fiRxjTVNeCyoB7OZjylM2+/FQzwNLkGLfdEmC5vQGE8AIatwaktBv7xx4YPZFD3nkjickDx+jYzW4WO8a2v+xFNju3IRr/FkeQKReJf96WDfSXAJB2hGg2ouDx+yUdeeLtjaNgcdi97+FdeOLxAGfGJAeBfZ+u6fnsweA+uT382zSf3M8gifVfPDVTKcw0BnbdAxfQa0NRfzIPKox9FL0FKJLLNK3pw=
   on:
     tags: true
-    all_branches: true
     repo: objectpath/ObjectPath
   distributions: sdist bdist_wheel
 after_success:
