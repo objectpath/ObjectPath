@@ -1,4 +1,4 @@
-ObjectPath
+ObjectPath-NG
 ==========
 
 [![Downloads](https://pypip.in/download/objectpath/badge.svg)](https://pypi.python.org/pypi/objectpath/)
@@ -14,7 +14,9 @@ The agile NoSQL query language for semi-structured data
 
 ObjectPath is a query language similar to XPath or JSONPath, but much more powerful thanks to embedded arithmetic calculations, comparison mechanisms and built-in functions. This makes the language more like SQL in terms of expressiveness, but it works over JSON documents rather than relations. ObjectPath can be considered a full-featured expression language. Besides selector mechanism there is also boolean logic, type system and string concatenation available. On top of that, the language implementations (Python at the moment; Javascript is in beta!) are secure and relatively fast.
 
-More at [ObjectPath site](http://objectpath.org/)
+This is a maintained fork of the [original project](htttps://github.com/adriank/ObjectPath) and still compatible with the specification at the
+[ObjectPath site](http://objectpath.org/). New ideas and features are welcome, however changes that break compatibility with the spec will be
+rejected.
 
 ![ObjectPath img](http://objectpath.github.io/ObjectPath/img/op-colors.png)
 
@@ -36,7 +38,7 @@ Command line usage
 -----
 
 `````sh
-$ sudo pip install objectpath-ng
+$ pip install objectpath-ng
 $ objectpath file.json
 `````
 or
@@ -50,7 +52,7 @@ Python usage
 ----------------
 
 `````sh
-$ sudo pip install objectpath-ng
+$ pip install objectpath-ng
 $ python
 >>> from objectpath import *
 >>> tree=Tree({"a":1})

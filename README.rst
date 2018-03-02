@@ -23,7 +23,10 @@ system and string concatenation available. On top of that, the language
 implementations (Python at the moment; Javascript is in beta!) are
 secure and relatively fast.
 
-More at `ObjectPath site <http://objectpath.org/>`_
+This package is a maintained fork of the `original project<htttps://github.com/adriank/ObjectPath>` and still compatible with the specification at the
+`ObjectPath site<http://objectpath.org/>`.
+
+More at `ObjectPath site <http://objectpath.github.io/ObjectPath/>`_
 
 .. figure:: http://objectpath.github.io/ObjectPath/img/op-colors.png
    :align: center
@@ -48,7 +51,7 @@ JSON documents  ObjectPath
 Documentation
 -------------
 
-`ObjectPath Reference <http://objectpath.org/reference.html>`_
+`ObjectPath Reference <http://objectpath.github.io/ObjectPath/reference.html>`_
 
 What's in this repo?
 --------------------
@@ -64,8 +67,10 @@ implementation has the very same API as the Python version.
 Command line usage
 ------------------
 
-``sh $ sudo pip install objectpath-ng $ objectpath file.json`` or
-``sh $ git clone https://github.com/objectpath/ObjectPath.git $ cd ObjectPath $ python shell.py file.json``
+``$ pip install objectpath-ng 
+$ objectpath file.json`` or
+``$ git clone https://github.com/objectpath/ObjectPath.git
+$ cd ObjectPath $ python shell.py file.json``
 
 Python usage
 ------------
