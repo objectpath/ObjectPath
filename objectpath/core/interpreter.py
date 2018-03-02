@@ -1,7 +1,8 @@
 #!/usr/bin/env python
 
-# This file is part of ObjectPath released under AGPL v3 license.
-# Copyright (C) 2010-2014 Adrian Kalbarczyk
+# This file is part of ObjectPath released under MIT license
+# Copyright for portions of project ObjectPath are held by Adrian Kalbarczyk, 2010-2014
+# All other copyright for project ObjectPath are held by Chris Lapa, 2018
 
 import sys, re
 from .parser import parse

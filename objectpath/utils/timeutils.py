@@ -1,8 +1,9 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-# This file is part of ObjectPath released under AGPL v3 license.
-# Copyright (C) 2008-2010 Adrian Kalbarczyk
+# This file is part of ObjectPath released under MIT license
+# Copyright for portions of project ObjectPath are held by Adrian Kalbarczyk, 2008-2010
+# All other copyright for project ObjectPath are held by Chris Lapa, 2018
 
 import datetime
 import sys, os
