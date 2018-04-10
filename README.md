@@ -1,8 +1,8 @@
 ObjectPath-NG
 ==========
 
-[![Downloads](https://pypip.in/download/objectpath/badge.svg)](https://pypi.python.org/pypi/objectpath/)
-[![License](https://pypip.in/license/objectpath/badge.svg)](https://pypi.python.org/pypi/objectpath/)
+[![Downloads](https://img.shields.io/badge/objectpath--ng-downloads-brightgreen.svg)](https://pypi.python.org/pypi/objectpath-ng/)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://pypi.python.org/pypi/objectpath-ng/)
 [![Build Status](https://travis-ci.org/objectpath/ObjectPath.svg?branch=master)](https://travis-ci.org/objectpath/ObjectPath)
 [![Code Health](https://landscape.io/github/objectpath/ObjectPath/master/landscape.png)](https://landscape.io/github/objectpath/ObjectPath/master)
 [![Coverage Status](https://coveralls.io/repos/objectpath/ObjectPath/badge.png?branch=master)](https://coveralls.io/r/objectpath/ObjectPath?branch=master)
