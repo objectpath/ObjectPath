@@ -79,8 +79,27 @@ object2={
     }
 }
 
+object3={
+    "item_1": {
+        "value": "foo",
+        "x": 5.6,
+        "y": 9
+    },
+    "item_2": {
+        "value": "bar",
+        "x": 5.6,
+        "y": 9.891
+    },
+    "item_3": {
+        "value": "foobar",
+        "x": 5.6,
+        "y": 9.8
+	}
+}
+
 tree1=Tree(object1)
 tree2=Tree(object2)
+tree3=Tree(object3)
 
 def execute_raw(expr):
     return tree1.execute(expr)
@@ -103,6 +122,13 @@ def execute2(expr):
         return list(r)
     else:
         return r
+
+def execute3(expr):
+	r=tree3.execute(expr)
+	if isinstance(r, TYPES):
+		return list(r)
+	else:
+		return r
 
 class ObjectPath(unittest.TestCase):
     def test_simple_types(self):
@@ -440,6 +466,12 @@ class ObjectPath_Paths(unittest.TestCase):
         self.assertEqual(execute("$.order[@.text is 1]"), [{"text": 1}])
         self.assertEqual(execute('$.order[@.text is """hello world"""]'), [{"text": """hello world"""}])
         self.assertEqual(execute('$.order[@.text is """hello \n world"""]'), [{"text": """hello \n world"""}])
+
+    def test_object_list(self):
+        self.assertEqual(
+            execute3('values($.*).value'),
+            [ 'foo', 'bar', 'foobar' ]
+        )
 
 #testcase2=unittest.FunctionTestCase(test_efficiency(2))
 testcase1=unittest.TestLoader().loadTestsFromTestCase(ObjectPath)
