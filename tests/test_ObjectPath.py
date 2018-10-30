@@ -97,9 +97,26 @@ object3={
 	}
 }
 
+object4={
+    "root": {
+        "response": {
+            "200": {
+                "value": 5,
+            },
+            "201": {
+                "value": 4,
+            },
+            "404": {
+                "value": 0,
+            }
+        }
+    }
+}
+
 tree1=Tree(object1)
 tree2=Tree(object2)
 tree3=Tree(object3)
+tree4=Tree(object4)
 
 def execute_raw(expr):
     return tree1.execute(expr)
@@ -129,6 +146,13 @@ def execute3(expr):
 		return list(r)
 	else:
 		return r
+
+def execute4(expr):
+    r=tree4.execute(expr)
+    if isinstance(r, TYPES):
+        return list(r)
+    else:
+        return r
 
 class ObjectPath(unittest.TestCase):
     def test_simple_types(self):
@@ -468,10 +492,9 @@ class ObjectPath_Paths(unittest.TestCase):
         self.assertEqual(execute('$.order[@.text is """hello \n world"""]'), [{"text": """hello \n world"""}])
 
     def test_object_list(self):
-        self.assertEqual(
-            execute3('values($.*).value'),
-            [ 'foo', 'bar', 'foobar' ]
-        )
+        self.assertEqual(sorted(execute3('values($.*).value')), sorted([ 'foo', 'bar', 'foobar' ]))
+        self.assertEqual(sorted(execute3('keys($.*)')), sorted([ 'item_1', 'item_2', 'item_3' ]))
+        self.assertEqual(sorted(execute4('map(values, $..root..response).value')), sorted([ 5, 4, 0 ]))
 
 #testcase2=unittest.FunctionTestCase(test_efficiency(2))
 testcase1=unittest.TestLoader().loadTestsFromTestCase(ObjectPath)
