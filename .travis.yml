@@ -4,6 +4,11 @@ python:
 - '3.4'
 - '3.5'
 - '3.6'
+matrix:
+  include:
+    - python: 3.7
+      dist: xenial
+      sudo: true
 install:
 - pip install -r requirements.txt
 - pip install coveralls
@@ -18,7 +23,7 @@ deploy:
   on:
     tags: true
     repo: objectpath/ObjectPath
-    python: '3.6'
+    python: '3.7'
   distributions: sdist bdist_wheel
 after_success:
 - coveralls
