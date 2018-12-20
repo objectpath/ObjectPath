@@ -1,5 +1,6 @@
 import os
 from setuptools import setup
+import subprocess
 
 def read(*rnames):
     return open(os.path.join(os.path.dirname(__file__), *rnames)).read()
@@ -11,8 +12,21 @@ long_description = (
     '********\n'
     )
 
+version = None
+try:
+    version = subprocess.check_output('git describe --tags', shell=True, universal_newlines=True)
+except:
+    pass
+
+if not version:
+    raise Exception('Could not determine version from git')
+
+version = version.lstrip('v')
+version = version.strip()
+
+
 setup(name='objectpath-ng',
-            version=read('VER').strip(),
+            version=version,
             description='The agile query language for semi-structured data. #JSON',
             long_description=long_description,
             url='http://objectpath.github.io/ObjectPath',
